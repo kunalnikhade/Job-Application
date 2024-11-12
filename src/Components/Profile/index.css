@@ -1,0 +1,60 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+  
+  
+  
+  
+  /* Body Background Animation */
+@keyframes bodyBackgroundAnimation {
+  0% {
+    background-position: 0% 0%;
+  }
+  50% {
+    background-position: 100% 100%;
+  }
+  100% {
+    background-position: 0% 0%;
+  }
+}
+
+/* Apply the animation to the body */
+.profileBody {
+  background: linear-gradient(120deg, #adf0f1, #d6f5f3, #fad0c4, #fcb69f);
+  background-size: 200% 200%;
+  animation: bodyBackgroundAnimation 15s ease infinite;
+  margin: 0;
+  padding: 0;
+  height: 100vh;
+}
+
+
+  /* Background Animation */
+@keyframes animatedBackground {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+/* Profile Card Styling */
+.profile-card {
+ 
+  background: linear-gradient(45deg, #ff6b6b, #f06595, #f093fb);
+  background-size: 200% 200%;
+  animation: animatedBackground 5s ease-in-out infinite;
+  color: #fff;
+  border-radius: 15px;
+}
+.profile-card:hover {
+  transform: scale(1.05);
+  max-width: 700px;
+  transition: transform 0.3s;
+}

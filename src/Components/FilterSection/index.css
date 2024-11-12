@@ -1,0 +1,126 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+
+/* Filters Group Container */
+.filters-group-container {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+  padding: 20px 30px 30px 30px;
+}
+
+/* Filter Heading */
+.filter-heading {
+  margin: 0;
+  color: #333333;
+  font-size: 20px;
+  font-weight: 600;
+}
+
+/* Filters List */
+.filters-list {
+  padding-left: 0;
+  list-style-type: none;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  margin: 0;
+}
+
+/* Filters List Item */
+.fliters-list-item {
+  display: flex;
+  align-items: center;
+}
+
+/* Checkbox Input */
+.checkbox-input {
+  width: 16px;
+  height: 16px;
+  cursor: pointer;
+  outline: none;
+  transition: transform 0.2s ease;
+}
+
+.checkbox-input:hover {
+  transform: scale(1.1);
+}
+
+/* Filter Label */
+.filter-label {
+  color: #444444;
+  margin-left: 16px;
+  font-size: 16px;
+  font-weight: 400;
+}
+
+/* Profile Details Container */
+.profile-details-container {
+  background-image: url(https://source.unsplash.com/random/800x600); /* Updated background image URL */
+  background-size: cover;
+  background-position: center;
+  padding: 20px;
+  border-radius: 20px;
+  height: 200px;
+  background-color: #ccf1f6; /* Updated background color */
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.15);
+}
+
+/* Profile Image */
+.profile-image {
+  width: 70px;
+  height: 70px;
+  border-radius: 50%;
+  border: 3px solid #6366f1;
+}
+
+/* Profile Name */
+.profile-name {
+  font-family: 'Roboto', sans-serif;
+  color: #6366f1;
+  margin-top: 10px;
+  margin-bottom: 5px;
+  font-size: 24px;
+  font-weight: 700;
+}
+
+/* Profile Bio */
+.profile-bio {
+  font-family: 'Roboto', sans-serif;
+  color: #2c3643;
+  font-size: 14px;
+  line-height: 1.6;
+}
+
+/* Loader and Failure Containers */
+.loader-container-profile,
+.profile-failure-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 180px;
+  background-color: #f8fafc;
+  border-radius: 10px;
+}
+
+/* Retry Button */
+.retry-button {
+  padding: 10px 24px;
+  background-color: #4f46e5;
+  color: #ffffff;
+  font-family: 'Roboto', sans-serif;
+  font-size: 14px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  outline: none;
+  transition: background-color 0.3s ease;
+}
+
+.retry-button:hover {
+  background-color: #6366f1;
+}
